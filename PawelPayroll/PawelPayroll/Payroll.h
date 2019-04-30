@@ -476,7 +476,7 @@ namespace PawelPayroll {
 	}
 
 	private: System::Void HelpToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-		MessageBox::Show("User Help");
+		MessageBox::Show("User Help:\n\n1. Enter Employee Id.\n2. Click 'Find Employee' button.\n3. Select week number from dropdown list.\n4. Click 'Add Weekly Hours' button.\n5. Fill in weekly hours and weekly overtime worked.\n6. Click 'Calculate Income' button.\n7. Click 'Save Income' button to save employee income.");
 	}
 
 	private: System::Void ButtonFindEmployee_Click(System::Object^ sender, System::EventArgs^ e) {
@@ -565,23 +565,17 @@ namespace PawelPayroll {
 
 	private: System::Void ButtonSaveIncome_Click(System::Object ^ sender, System::EventArgs ^ e) {
 
-		// Weekly Hours,
+		// Weekly Hours,Week Number,Weekly Overtime,Weekly Gross,Weekly Net,Weekly Tax
 		registeredEmployee->setHours(Double::Parse(textBoxWorkingHours->Text));
-		// Week Number,
 		registeredEmployee->setWeekNumber(int::Parse(comboBoxWeekSelect->SelectedItem->ToString()));
-		// Weekly Overtime,
 		registeredEmployee->setOvertime(Double::Parse(textBoxOvertimeHours->Text));
-		// Weekly Gross,
 		registeredEmployee->setGross(roundedGross);
-		// Weekly Net,
 		registeredEmployee->setNet(roundedNet);
-		// Weekly Tax
 		registeredEmployee->setWeeklyTax(roundedTax);
 
 		// save values to the csv file for selected employee
 		CSVManipulator manipulator;
 		manipulator.SaveData(registeredEmployee);
-
 
 		// hide groupBoxEmployee, groupBoxHoursWorked, groupBoxIncome
 		groupBoxEmployee->Visible = false;
