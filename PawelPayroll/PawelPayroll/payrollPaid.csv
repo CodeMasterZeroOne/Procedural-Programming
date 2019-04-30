@@ -1,0 +1,11 @@
+Employee ID,First Name,Last Name,Role,Weekly Hours,Weekly Overtime,Weekly Gross,Weekly Net,Weekly Tax,Week Number
+101,Fred,Hacker,Apprentice,39,12,373.35,287.48,85.87,1
+102,Isabelle,Stewart,Apprentice,39,15,402.83,310.18,92.65,1
+103,Aoibheann,O Cleirigh,Apprentice,39,22,471.6,363.13,108.47,1
+104,Lorcan,Flanagan,Apprentice,39,40,648.45,499.31,149.14,1
+105,Charlie,O Conaill,Apprentice,39,0,255.45,196.7,58.75,1
+106,Georgia,Mag Uidhir,Operative,39,16,922.95,710.67,212.28,1
+107,Joshua,Donnelly,Operative,39,9,769.13,592.23,176.9,1
+108,Mason,Flynn,Operative,39,23,1076.78,829.12,247.66,1
+109,Nathan,O Connor,Operative,39,30,1230.6,947.56,283.04,1
+110,Laura,Connolly,Operative,39,25,1120.72,862.96,257.77,1
