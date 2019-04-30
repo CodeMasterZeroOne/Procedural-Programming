@@ -495,6 +495,7 @@ namespace PawelPayroll {
 				// display name and surname with this Id
 				labelEmployeeNameSurname->Text = registeredEmployee->getFirstName() + " " + registeredEmployee->getLastName();
 				labelEmployeeRole->Text = registeredEmployee->getRole();
+
 			}
 			else
 			{
