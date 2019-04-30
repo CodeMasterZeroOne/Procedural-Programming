@@ -366,9 +366,9 @@ namespace PawelPayroll {
 					L"27", L"28", L"29", L"30", L"31", L"32", L"33", L"34", L"35", L"36", L"37", L"38", L"39", L"40", L"41", L"42", L"43", L"44",
 					L"45", L"46", L"47", L"48", L"49", L"50", L"51", L"52"
 			});
-			this->comboBoxWeekSelect->Location = System::Drawing::Point(168, 60);
+			this->comboBoxWeekSelect->Location = System::Drawing::Point(181, 60);
 			this->comboBoxWeekSelect->Name = L"comboBoxWeekSelect";
-			this->comboBoxWeekSelect->Size = System::Drawing::Size(92, 28);
+			this->comboBoxWeekSelect->Size = System::Drawing::Size(64, 28);
 			this->comboBoxWeekSelect->TabIndex = 12;
 			// 
 			// buttonAddHours

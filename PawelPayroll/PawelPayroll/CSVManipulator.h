@@ -62,15 +62,14 @@ public:
 			employee->setLastName(gcnew String(line.at(2).c_str()));
 			employee->setRole(gcnew String(line.at(3).c_str()));
 			employee->setRate(::atof(line.at(4).c_str()));
-			//employee.setHours(line.at(5).c_str());
-			//employee.setOvertime(line.at(6).c_str());
-			//employee.setGross(line.at(7).c_str());
-			//employee.setNet(line.at(8).c_str());
-			//employee.setWeeklyTax(line.at(9).c_str());
-			//employee.setWeekNumber(line.at(10).c_str());
+			//employee->setHours(::atof(line.at(5).c_str()));
+			//employee->setOvertime(::atof(line.at(6).c_str()));
+			//employee->setGross(::atof(line.at(7).c_str()));
+			//employee->setNet(::atof(line.at(8).c_str()));
+			//employee->setWeeklyTax(::atof(line.at(9).c_str()));
+			//employee->setWeekNumber(::atof(line.at(10).c_str()));
 
 			employees->Add(employee);
-
 		}
 		
 		return employees;
